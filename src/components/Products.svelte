@@ -9,7 +9,6 @@
 </style>
 
 <h1>Products</h1>
-<!-- { JSON.stringify($products) } -->
 
 {#each $products as product }
 
