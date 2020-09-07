@@ -3,18 +3,12 @@
 
     const totalInCart = () => {
         const arrayOfPrices = $products.map(p => (p.quantity) * p.price)
-        const total = arrayOfPrices.reduce((a, p) => p + a, 0)
-        return total
+        return arrayOfPrices.reduce((a, p) => p + a, 0)
     }
 
     let total = 0
-
-    const calculateTotal = () => {
-        total = totalInCart()
-        // debugger
-        return total
-    }
-
+    const calculateTotal = () => total = totalInCart()
+     
 </script>
 
 <button on:click={ calculateTotal } class="cal__total"> Calculate your total </button>
