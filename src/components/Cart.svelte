@@ -15,6 +15,7 @@
 </script>
 
 <style>
+    
 .cart {
     border: 3px solid black;
     margin-top: 5px;
