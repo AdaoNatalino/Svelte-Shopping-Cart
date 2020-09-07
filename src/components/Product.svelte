@@ -22,8 +22,9 @@
 </style>
 
 <div class="product">
-    id: {product.id}
+    <!-- id: {product.id} -->
     name: {product.name}
-    price: {product.price}
+    price: £{product.price}
+    size: {product.size}
     <button on:click={buyProduct}>buy</button>
 </div>

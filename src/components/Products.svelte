@@ -1,5 +1,5 @@
 <script>
-	import { products } from '../products'
+	import { pizzas } from '../products'
     import Product from './Product.svelte'
 </script>
 
@@ -10,7 +10,7 @@
 
 <h1>Products</h1>
 
-{#each $products as product }
+{#each $pizzas as product }
 
     <Product product={product}/>
     
