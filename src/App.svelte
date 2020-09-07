@@ -1,5 +1,16 @@
 <script>
-	let name = 'world';
+	import Cart from './components/Cart.svelte'
+	import Navbar from './components/Navbar.svelte'
+	import Products from './components/Products.svelte'
+
 </script>
 
-<h1>Hello {name}!</h1>
+<style>
+
+
+</style>
+
+
+<Navbar />
+<Products />
+<Cart />
