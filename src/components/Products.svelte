@@ -41,13 +41,19 @@
     border: 1px solid black;
 }
 
+.header {
+    text-align: center;
+}
+
 </style>
 
-<h1>Select your Category: {choice}</h1>
+<div class="header">
+    <h1>Select your Category: {choice}</h1>
 
-<button class="pizza" on:click={selectPizzas}>Pizzas</button>
-<button class="drinks" on:click={selectDrinks}>Drinks</button>
-<button class="desserts" on:click={selectDesserts}>Desserts</button>
+    <button class="pizza" on:click={selectPizzas}>Pizzas</button>
+    <button class="drinks" on:click={selectDrinks}>Drinks</button>
+    <button class="desserts" on:click={selectDesserts}>Desserts</button>
+</div>
 
 <div class="container">
 

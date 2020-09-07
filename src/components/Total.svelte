@@ -1,5 +1,6 @@
 <script>
     import { products } from "../cart";
+   
 
     const totalInCart = () => {
         const arrayOfPrices = $products.map(p => (p.quantity) * p.price)
@@ -27,6 +28,11 @@
 
 .cal__total {
     align-items: center;
+    color: blue;
+    border-radius: 5px;
+    background-color: lightgray;
+    font-weight: 500;
+    width: 30%;
 }
 
 </style>
@@ -36,6 +42,6 @@
 
 
     <div class="total">
-        Total in your cart: £{ total }
+        Total Price: £{ total }
     </div>
 </div>
