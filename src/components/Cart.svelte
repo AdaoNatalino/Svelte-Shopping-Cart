@@ -15,14 +15,19 @@
 </script>
 
 <style>
-
+.cart {
+    border: 3px solid black;
+    margin-top: 5px;
+}
 
 </style>
 
-<h1>Cart</h1>
-<h3>Items in the cart { itemsInCart }</h3>
+<div class="cart">
+    <h1>Cart</h1>
+    <h3>Items in the cart: { itemsInCart }</h3>
 
 
-{#each $products as product}
-    <CartProduct product={product}/>
-{/each}
+    {#each $products as product}
+        <CartProduct product={product}/>
+    {/each}
+</div>

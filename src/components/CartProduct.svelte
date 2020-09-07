@@ -28,26 +28,30 @@
 <style>
 
 .add {
-    background-color: rgb(61, 35, 173);
+    background-color: rgb(99, 68, 241);
     border-radius: 5px;
+    width: 30px;
 }
 
 .remove{
-    background-color: rgb(214, 198, 49);
+    background-color: yellow;
     border-radius: 5px;
+    width: 30px;
 }
 
 .delete{
     background-color: red ;
     border-radius: 5px;
+    width: 30px;
 }
 
 .products {
     position: relative;
-    margin-left: 10px;
+    margin-left: auto;
     color: black;
     display: flex;
     border: 1px solid black;
+    margin-right: auto;
 }
 
 

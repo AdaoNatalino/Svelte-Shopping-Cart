@@ -35,7 +35,7 @@
 
 .container {
     position: relative;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     color: black;
     display: flex;
     border: 1px solid black;
@@ -48,7 +48,8 @@
 </style>
 
 <div class="header">
-    <h1>Select your Category: {choice}</h1>
+    <h1>Welcome to Adao's Restaurant! </h1>
+    <h2>Select the category to see our Menu: {choice}</h2>
 
     <button class="pizza" on:click={selectPizzas}>Pizzas</button>
     <button class="drinks" on:click={selectDrinks}>Drinks</button>

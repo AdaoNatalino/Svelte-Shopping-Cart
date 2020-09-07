@@ -36,6 +36,6 @@
     <!-- id: {product.id} -->
     <h4>{product.name}</h4>
     <p>£{product.price}</p>
-    <p>size: {product.size} </p>
-    <button class="buy" on:click={buyProduct}>buy</button>
+    <p>Size: {product.size} </p>
+    <button class="buy" on:click={buyProduct}>Add to Cart</button>
 </div>
