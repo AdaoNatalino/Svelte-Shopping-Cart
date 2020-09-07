@@ -1,5 +1,11 @@
 <script>
    export let product = {  }
+   import { products } from '../cart'
+
+   const buyProduct = () => {
+    $products = [...$products, product]
+   }
+
 </script>
 
 <style>
@@ -11,5 +17,5 @@
     id: {product.id}
     name: {product.name}
     price: {product.price}
-    <button>buy</button>
+    <button on:click={buyProduct}>buy</button>
 </div>
