@@ -18,13 +18,24 @@
 
 <style>
 
+.product {
+    border: 1px solid black;
+    flex: 1;
+    text-align: center;
+}
+
+.buy {
+    background-color: lightgreen;
+    border-radius: 5px;
+
+}
 
 </style>
 
 <div class="product">
     <!-- id: {product.id} -->
-    name: {product.name}
-    price: £{product.price}
-    size: {product.size}
-    <button on:click={buyProduct}>buy</button>
+    <h4>{product.name}</h4>
+    <p>£{product.price}</p>
+    <p>size: {product.size} </p>
+    <button class="buy" on:click={buyProduct}>buy</button>
 </div>

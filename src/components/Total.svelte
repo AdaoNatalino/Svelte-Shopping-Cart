@@ -11,9 +11,31 @@
      
 </script>
 
-<button on:click={ calculateTotal } class="cal__total"> Calculate your total </button>
+<style>
+
+.total{
+    background-color: black;
+    display: flex;
+    color: white;
+    width: 30%;
+    font-size: x-large;
+}  
+
+.total__container {
+    display: grid;
+}
+
+.cal__total {
+    align-items: center;
+}
+
+</style>
+
+<div class="total__container">
+    <button on:click={ calculateTotal } class="cal__total"> Calculate your total </button>
 
 
-<div class="total">
-    Total in your cart: { total }
+    <div class="total">
+        Total in your cart: £{ total }
+    </div>
 </div>

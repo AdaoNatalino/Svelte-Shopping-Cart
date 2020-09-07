@@ -22,37 +22,48 @@
         $products = $products.filter(i => i.id != product.id)
     }
 
-    // const totalInCart = () => {
-    //     const arrayOfPrices = $products.map(p => (p.quantity) * p.price)
-    //     const total = arrayOfPrices.reduce((a, p) => p + a, 0)
-    //     return total
-    // }
-
-    // const calculateTotal = () => showTotal = true 
-
+   
 </script>
 
 <style>
+
+.add {
+    background-color: rgb(61, 35, 173);
+    border-radius: 5px;
+}
+
+.remove{
+    background-color: rgb(214, 198, 49);
+    border-radius: 5px;
+}
+
+.delete{
+    background-color: red ;
+    border-radius: 5px;
+}
+
+.products {
+    position: relative;
+    margin-left: 10px;
+    color: black;
+    display: flex;
+    border: 1px solid black;
+}
 
 
 </style>
 
 
-<div class="product">
-    Name: {product.name}
-    Price: {product.price}
-    Qtd: {product.quantity}
-    <button on:click={addOne}> + </button>
-    <button on:click={removeOne} {disabled}> - </button>
-    <button on:click={deleteItem}> X </button>
-
+<div class="products">
+    <ul>
+        <li>
+            <h3>Product: {product.name}</h3>
+            <p>Price per Unit: £{product.price}</p>
+            <p>Qtd: {product.quantity} </p>
+            <button class="add" on:click={addOne}> + </button>
+            <button class="remove" on:click={removeOne} {disabled}> - </button>
+            <button class="delete" on:click={deleteItem}> X </button>
+        </li>
+    </ul>
 </div>
 
-<!-- <button on:click={ calculateTotal } class="cal__total"> Calculate your total </button>
-
-{#if showTotal} 
-    <div class="total">
-        Total in your cart: { totalInCart() }
-    </div>
-    
-{/if} -->
