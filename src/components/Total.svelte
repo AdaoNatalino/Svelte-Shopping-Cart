@@ -1,12 +1,10 @@
 <script>
     import { products } from "../cart";
-   
 
     const totalInCart = () => {
         const arrayOfPrices = $products.map(p => (p.quantity) * p.price)
         return arrayOfPrices.reduce((a, p) => p + a, 0)
     }
-
     let total = 0
     const calculateTotal = () => total = totalInCart()
      
